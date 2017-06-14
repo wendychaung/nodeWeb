@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+    .container
+        .neir 详情页内容
+            hr
+            ul.list
+                li #{movie.title}
+                li #{moment(movie.meta.createAt).format("YYYY-MM-DD")}

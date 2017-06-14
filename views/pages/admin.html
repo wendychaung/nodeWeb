@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+    <link href="/css/css.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top">
+      <h1></h1>
+      <h2>测试内容</h2>
+      <hr>
+    </div>
+    <div class="container">
+      <form method="post" action="/tijiao">
+        <input type="hidden" name="movie[_id]" value="#{movie._id}">
+        <ul class="admin">
+          <li>
+            <label for="title">电影名称</label>
+            <input id="title" type="text" name="movie[title]" placeholder="电影名称" value="#{movie.title}">
+          </li>
+          <li>
+            <label for="author">电影作者</label>
+            <input id="author" type="text" name="movie[author]" placeholder="电影作者" value="#{movie.author}">
+          </li>
+          <li>
+            <button>提交</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>

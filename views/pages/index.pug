@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+    .container
+        ul.list
+            each movie in movies
+                li.ceshi
+                    a(href="/detail/"+movie._id)
+                        | #{movie.title}
+                    hr

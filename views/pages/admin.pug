@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+    .container
+        form(method="post",action="/tijiao")
+            input(type="hidden",name="movie[_id]",value=movie._id)
+            ul.admin
+                li
+                    label(for="title") 电影名称
+                    input(id="title",type="text",name="movie[title]",placeholder="电影名称",value=movie.title)
+                li
+                    label(for="author") 电影作者
+                    input(id="author",type="text",name="movie[author]",placeholder="电影作者",value=movie.author)
+                li
+                    button 提交

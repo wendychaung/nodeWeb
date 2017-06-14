@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+    .container
+        .neir 列表内容
+        hr
+        ul.list
+            each movie in movies
+                li.ceshi
+                    a(href="/detail/"+movie._id)
+                        |查看<#{movie.title}> #{moment(movie.meta.updateAt).format("MM/DD/YYYY-MM-DD")}
+                    br
+                    span(data-id=movie._id,class="del")
+                        |《删除》
+                    a(href="/edit/"+movie._id)
+                        | 《修改》
+                    hr
+    script(src='/js/adminlist.js')

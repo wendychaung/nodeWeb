@@ -1,0 +1,25 @@
+{
+  "result": "true",
+  "total": 3,
+  "cur_page":1,
+  "page_size":10,
+  "page_count":20,
+  "total_count":200,
+  "rows":    [
+    {
+      "id":1,
+      "title":"测试内容1",
+      "src":"http://www.baidu.com/"
+    },
+    {
+      "id":2,
+      "title":"测试内容2",
+      "src":"http://www.baidu.com/"
+    },
+    {
+      "id":3,
+      "title":"测试内容3",
+      "src":"http://www.baidu.com/"
+    }
+  ]
+}
